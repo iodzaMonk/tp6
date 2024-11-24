@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP6</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+    <div class="header">
+      <button id="theme-toggle">🌞 Light</button>
+      <button id="documentation">Documentation</button>
+    </div>
+    <div class="container">
+      <div id="box">
+        <button id="append">Append</button> <!-- page 62-->
+        <button id="prepend">Prepend</button> <!-- page 63-->
+        <button id="after">After</button>
+        <button id="before">Before</button> <!-- page 64-->
+        <button id="replace">ReplaceWith</button> <!-- page 63-->
+        <button id="insert">Insert</button> <!-- page 65-->
+        <button id="prependTo">PrependTo</button> <!-- page 68-->
+        <button id="clone">Clone</button> <!-- page 70-->
+        <button id="wrap">Wrap</button> <!-- page 74-->
+        <button id="remove">Remove</button> <!-- page 78-->
+
+      </div>
+
+      <div id="answer">
+        <p id="initialText">Click on the buttons to try out the examples!</p>
+      </div>
+    </div>
+
+    <div class="open-docs">
+      <div class="docs-content">
+        <button class="close-docs">&times;</button>
+        <h2>jQuery Methods Documentation</h2>
+
+        <section class="doc-section">
+          <h3>1. Insérer du contenu</h3>
+          <div class="method-group">
+
+            <div class="method">
+              <code>.append()</code>
+              <p>Inserts content at the end of the selected elements</p>
+              <pre><code>$('selector').append(content);</code></pre>
+            </div>
+
+            <div class="method">
+              <code>.prepend()</code>
+              <p>Inserts content at the beginning of the selected elements</p>
+              <pre><code>$('selector').prepend(content);</code></pre>
+            </div>
+
+            <div class="method">
+              <code>.before()</code>
+              <p>Inserts content before the selected elements</p>
+              <pre><code>$('selector').before(content);</code></pre>
+            </div>
+
+            <div class="method">
+              <code>.after()</code>
+              <p>Inserts content after the selected elements</p>
+              <pre><code>$('selector').after(content);</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h3>Mouve content</h3>
+
+          <div class="method">
+            <code>.append()</code>
+            <p>Inserts content at the end of the selected elements</p>
+            <pre><code>$('selector').append(content);</code></pre>
+          </div>
+
+
+        </section>
+
+
+        <section class="doc-section">
+          <h3>2. Remplacer des éléments</h3>
+          <div class="method-group">
+            <div class="method">
+              <code>.replaceWith()</code>
+              <p>Replaces selected elements with new content</p>
+              <pre><code>$('selector').replaceWith(newContent);</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h3>3. Mouve content</h3>
+
+          <div class="method-group">
+            <div class="method">
+              <code>.append()</code>
+              <p>Moves the selected2 element at the end of the selected1 element</p>
+              <pre><code>$('#selected1').append('#selected2');</code></pre>
+            </div>
+            <div class="method">
+              <code>.prepend()</code>
+              <p>Moves the selected2 element at the beginning of the selected1 element</p>
+              <pre><code>$('#selected1').prepend(#selected2);</code></pre>
+            </div>
+            <div class="method">
+              <code>.before()</code>
+              <p>Moves the selected2 element before the selected1 element</p>
+              <pre><code>$('#selected1').before(#selected2);</code></pre>
+            </div>
+            <div class="method">
+              <code>.after()</code>
+              <p>Moves the selected2 element after the selected1 element</p>
+              <pre><code>$('#selected1').after(#selected2);</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+        
+
+        <section class="doc-section">
+          <h3>3. Insérer des éléments</h3>
+          <div class="method-group">
+            <div class="method">
+              <code>.appendTo()</code>
+              <p>Inserts selected elements at the end of the target</p>
+              <pre><code>$(content).appendTo(target);</code></pre>
+            </div>
+            <div class="method">
+              <code>.prependTo()</code>
+              <p>Inserts selected elements at the beginning of the target</p>
+              <pre><code>$(content).prependTo(target);</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h3>4. Clone éléments</h3>
+          <div class="method-group">
+            <div class="method">
+              <code>.clone()</code>
+              <p>Creates a deep copy of selected elements</p>
+              <pre><code>$('selector').clone().appendTo(target);</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h3>5. Wrap éléments</h3>
+          <div class="method-group">
+            <div class="method">
+              <code>.wrap()</code>
+              <p>Wraps an HTML structure around each element</p>
+              <pre><code>$('selector').wrap('&lt;div class="wrapper"&gt;');</code></pre>
+            </div>
+            <div class="method">
+              <code>.wrapAll()</code>
+              <p>Wraps an HTML structure around all elements</p>
+              <pre><code>$('selector').wrapAll('&lt;div class="wrapper"&gt;');</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h3>6. Remove éléments</h3>
+          <div class="method-group">
+            <div class="method">
+              <code>.remove()</code>
+              <p>Removes selected elements from the DOM</p>
+              <pre><code>$('selector').remove();</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+<!--
+  1.Insérer du contenu, page 62
+
+  2.Remplacer des éléments, page 64
+
+  3.Insérer des éléments, page 65
+
+  4.Déplacer du contenu, page 68
+
+  5.Dupliquer des éléments, page 70
+
+  6.Entourer des éléments, page 74
+
+  8.Supprimer des éléments, page 78
+
+-->
